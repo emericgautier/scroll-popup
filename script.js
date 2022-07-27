@@ -15,6 +15,12 @@ window.addEventListener("scroll", () => {
     imgImprovise.style.opacity = 1;
     imgImprovise.style.transform = "none";
   }
+
+  // Popup
+  if (scrollValue > 0.85) {
+    popup.style.opacity = 1;
+    popup.style.transform = "none";
+  }
 });
 
 // Créer un événement au scroll
