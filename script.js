@@ -1,3 +1,5 @@
+let playOnce = true;
+
 window.addEventListener("scroll", () => {
   // Navbar effect
   if (window.scrollY > 50) {
@@ -17,9 +19,10 @@ window.addEventListener("scroll", () => {
   }
 
   // Popup
-  if (scrollValue > 0.85) {
+  if (scrollValue > 0.85 && playOnce) {
     popup.style.opacity = 1;
     popup.style.transform = "none";
+    playOnce = false;
   }
 });
 
