@@ -5,6 +5,10 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.style.height = "90px";
   }
+
+  let scrollValue =
+    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+  console.log(scrollValue);
 });
 
 // Créer un événement au scroll
