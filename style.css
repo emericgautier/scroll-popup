@@ -151,6 +151,7 @@ p::first-letter {
     font-size: 1.5rem;
 }
 .button-container input  {
+    width: 300px;
     border: 1px solid #333;
     padding: 1rem 2rem;
     border-radius: 15px;
