@@ -131,7 +131,67 @@ p::first-letter {
     background: linear-gradient(90deg, #30587a, rgb(35, 115, 180));
     border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
     box-shadow: 0 5px 10px black;
-    opacity: 0;
-    transform: translateX(400px);
+    /* opacity: 0;
+    transform: translateX(400px); */
     transition: 1s ease-out;
+}
+.pop-up-container {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+.pop-up-container h3 {
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.button-container input  {
+    border: 1px solid #333;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 1px 2px 0 black;
+    outline: none;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.button-container input:focus {
+    background: rgb(211, 242, 251);
+}
+
+.button-container button {
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #333;
+    box-shadow: 1px 2px 0 black;
+    cursor: pointer;
+    background: white;
+    transition: 0.3s;
+}
+.button-container button:hover {
+    background: rgb(211, 242, 251);
+    transform: translateX(-1px);
+}
+.button-container button:active {
+    transform: scale(0.96);
+}
+.fa-times-circle {
+    position: absolute;
+    top: 2rem;
+    left: 0.7rem;
+    color: white;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 0 #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.fa-times-circle:hover {
+    color: rgb(211, 242, 251);
+    transform: translateX(-1px);
+}
+.fa-times-circle:active {
+    transform: scale(1.5);
 }
