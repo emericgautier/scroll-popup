@@ -23,6 +23,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
+closeBtn.addEventListener("click", () => {
+  popup.style.opacity = 0;
+  popup.style.transform = "translateX(500px)";
+});
+
 // Créer un événement au scroll
 
 // Réduire la navbar quand on descend vers le bas, la remettre à sa taille initiale quand on remonte tout en haut
