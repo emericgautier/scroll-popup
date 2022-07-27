@@ -25,6 +25,9 @@ nav {
     z-index: 1000;
     transition: 0.2s ease;
 }
+#navbar {
+    transition: 0.5s ease;
+}
 .nav-elements {
     display: flex;
     justify-content: space-between;
