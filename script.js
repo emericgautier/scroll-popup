@@ -9,6 +9,12 @@ window.addEventListener("scroll", () => {
   let scrollValue =
     (window.scrollY + window.innerHeight) / document.body.offsetHeight;
   console.log(scrollValue);
+
+  // Image
+  if (scrollValue > 0.45) {
+    imgImprovise.style.opacity = 1;
+    imgImprovise.style.transform = "none";
+  }
 });
 
 // Créer un événement au scroll
