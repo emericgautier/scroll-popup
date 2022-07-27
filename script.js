@@ -31,12 +31,21 @@ closeBtn.addEventListener("click", () => {
   popup.style.transform = "translateX(500px)";
 });
 
-// Créer un événement au scroll
+// another easier way to close the popup to avoid boolean
+/*********** 
+closeBtn.addEventListener("click", () => {
+popup.style.opacity = "0";
+popup.style.transform = "translateX(500px)";
+popup.style.visibility = "hidden";
+}); 
+**********/
 
-// Réduire la navbar quand on descend vers le bas, la remettre à sa taille initiale quand on remonte tout en haut
+// 1. Créer un événement au scroll
 
-// Faire apparaitre l'image de la partie improvise
+// 2. Réduire la navbar quand on descend vers le bas, la remettre à sa taille initiale quand on remonte tout en haut
 
-// Faire apparaitre la popup quand on est en bas du site
+// 3. Faire apparaitre l'image de la partie improvise
 
-// Bonus : quand on clique sur la pop-up elle disparait pour toujours
+// 4. Faire apparaitre la popup quand on est en bas du site
+
+// 5. Bonus : quand on clique sur la pop-up elle disparait pour toujours
